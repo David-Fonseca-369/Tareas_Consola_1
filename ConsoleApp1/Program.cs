@@ -6,44 +6,111 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Pida 2 numeros y calcule la suma de estos.
-            //TAREA 1
-            //Promedio de calificaciones
-            //Pida 4 calificaciones de los parciales y me devuelva el promedio.
+            /* Operadores aritmeticos
+             + - * / %
+            */
 
-            //Programa de salario
-            //Calcule e imprima el salario semanal de un empleado
-            //a partir de las horas semanales trabajadas y del salario por hora
+            /*Operadores condicionales*/
 
-            //Agente de ventas
-            /*Una compañia de venta de carros usados, paga a su personal de ventas un salario de $1,000 mensuales,
-              mas una comisión de $150 por cada carro vendido, más el 5% del valor de las ventas totales.
+            //If
+            //Switch
+            //Operador ternario
 
-              Cada mes el capturista de la empresa ingresa en la computadora los datos. Hacer un programa que calcule
-              e imprima el salario mensual de un vendedor dado.
+            /*
+             *Operadores de comparación
+             
+            == comparación
+            != diferencia
+            > mayor
+            < menor
+            >= mayor o igual
+            <= menor o igual           
              */
 
-            //PISTAS:
-            //Pedir - Ingrese los carros vendidos
-            //... - _ Ingrese el costo de los carros -> Imprimir el salario mensual del empleado 
+            // = asignación*
+
+            //Console.WriteLine("Ingresa tu edad:");
+            //int edad = Convert.ToInt32(Console.ReadLine());
 
 
-            //Texto de pedir primer numero
-            Console.WriteLine("Ingresa el primer número:");
+            //if (edad >= 0 && edad <= 12)
+            //{
+            //    Console.WriteLine("Eres niño");
+            //}
+            //else if (edad > 12 && edad <=18)
+            //{
+            //    Console.WriteLine("Eres adolescente");
+            //}
+            //else if (edad > 18 && edad <=60)
+            //{
+            //    Console.WriteLine("Eres un adulto");
+            //}
+            //else if (edad > 60)
+            //{
+            //    Console.WriteLine("Eres mayor de edad");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Edad no valida");
+            //}
 
-            //Pedir numero por consola
-            int primerNumero = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Ingresa un número:");
+            //int numero = Convert.ToInt32(Console.ReadLine());
 
-            //Texto de pedir segundo numero
-            Console.WriteLine("Ingresa el segundo número:");
+            //switch (numero)
+            //{
+            //    case "s":                   
+            //        Console.WriteLine("tu número uno");
+            //        break;
+            //    case 2: //si es igual a este numero entra al caso
+            //        Console.WriteLine("tu número dos");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("tu numero es tres");
+            //        break;
+            //    default:
+            //        Console.WriteLine("No coincide");
+            //        break;
+            //}
 
-            //Pide segundo numerom por consola
-            int segundoNumero = Convert.ToInt32(Console.ReadLine());
+            //Operador ternario
 
-            int suma = primerNumero + segundoNumero;
+            //Console.WriteLine("Ingresa un número:");
+            //int numero = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"La suma de los dos números es: {suma}");
+            //                 // condicion ? 'si cumple' : 'si no cumple'
+            //string mensaje = numero % 2 == 0 ? "Es par" : "Es inpar";
+            //Console.WriteLine(mensaje);
 
+            //EJERCICIO 1
+            //Pedir un numero entre 0 y 99 999 y decir cuantas cifras tiene
+            //1 = 1 cifra
+            //100 = 3 crifras 
+            //9000 = 4 crifras
+
+            //Ejercicio 2:
+            /*Pedir que digite un dos números y despues de pedirlos que nos indique que operacion desea hacer
+             1.- Suma ingresa (s)  etc... (+,-,/,*)
+             2.- res (r)
+             ..... 
+             */
+            Console.WriteLine("Opciones: \n" +
+                "1.- Suma (s)\n" +
+                "2.- Resta (r)" +
+                "3.- Multi (m)");
+
+
+            //Ejercicio 3
+            /*
+             CAJERO AUTOMATICO
+            Hacer un programa quen simule un cajero automático con un saldo inicial de $1000 pesos
+            con el siguiente menu de opciones:
+            1.- Ingresar dinero a la cuenta   => Solicitar la cantidad a ingresar y después imprimir la cantidad total de la cuenta
+            2.- Retirar dinero de la cuenta   => Solicitar la cantidad a retirar (Si tiene el dinero que impra lo que resta y si no imprimir que su saldo es insuficiente)
+            3.- Salir => imprimir que ha salido del sistema
+
+             * => opcion no valida
+             */
         }
 
 
