@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -6,111 +7,101 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            /* Operadores aritmeticos
-             + - * / %
-            */
+            //BUCLES
+            //- FOR, - WHILE, -- DO WHILE, FOREACH
 
-            /*Operadores condicionales*/
+            //List<int> facturas = new() { 2, 6, 8, 9, 5, 7, 8 };
+            // [2, 6, 8, 9]
+            //  0  1  2  3
 
-            //If
-            //Switch
-            //Operador ternario
+            //inicializas variable | condicion | actualización
 
-            /*
-             *Operadores de comparación
-             
-            == comparación
-            != diferencia
-            > mayor
-            < menor
-            >= mayor o igual
-            <= menor o igual           
-             */
+            //Incremento
+            //++ === i = i + 1;
 
-            // = asignación*
+            //Decremento
+            //-- === i = i - 1;
+            //Imprime
 
-            //Console.WriteLine("Ingresa tu edad:");
+            //for(int i = 0; i < facturas.Count; i+=2)
+            //{
+            //    Console.WriteLine($"Indice = {i}");
+            //    Console.WriteLine($"Elemento = {facturas[i]}");
+
+            //    Console.WriteLine("----");
+            //}
+
+            //for (int i = 0; i <= 1000; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //WHILE
+            //int numero = 0;
+
+            //while (numero <= 1000)
+            //{
+            //    //Logica
+            //    Console.WriteLine(numero);
+            //    numero++;
+            //}
+
+
+            //Console.WriteLine("" +
+            //    "Elige una opcion:\n" +
+            //    "1.- Dar edad\n" +
+            //    "2.- Salir"
+            //    );
+
             //int edad = Convert.ToInt32(Console.ReadLine());
 
+            ////se escapa hasta que cumpla la condición
+            //while (edad != 2)
+            //{
+            //    Console.WriteLine($"Tu edad es: {edad}");
 
-            //if (edad >= 0 && edad <= 12)
-            //{
-            //    Console.WriteLine("Eres niño");
-            //}
-            //else if (edad > 12 && edad <=18)
-            //{
-            //    Console.WriteLine("Eres adolescente");
-            //}
-            //else if (edad > 18 && edad <=60)
-            //{
-            //    Console.WriteLine("Eres un adulto");
-            //}
-            //else if (edad > 60)
-            //{
-            //    Console.WriteLine("Eres mayor de edad");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Edad no valida");
+            //    Console.WriteLine("" +
+            //   "Elige una opcion:\n" +
+            //   "1.- Dar edad\n" +
+            //   "2.- Salir"
+            //   );
+
+            //    edad = Convert.ToInt32(Console.ReadLine());
+
             //}
 
-            //Console.WriteLine("Ingresa un número:");
-            //int numero = Convert.ToInt32(Console.ReadLine());
+            //Calcular promedio de alumnos
+            Console.WriteLine("Ingresa la cantidad de alumnos:");
+            int cantidad = Convert.ToInt32(Console.ReadLine());
 
-            //switch (numero)
-            //{
-            //    case "s":                   
-            //        Console.WriteLine("tu número uno");
-            //        break;
-            //    case 2: //si es igual a este numero entra al caso
-            //        Console.WriteLine("tu número dos");
-            //        break;
-            //    case 3:
-            //        Console.WriteLine("tu numero es tres");
-            //        break;
-            //    default:
-            //        Console.WriteLine("No coincide");
-            //        break;
-            //}
+            int sumaCalificaciones = 0;
 
-            //Operador ternario
+            for (int i = 1; i <= cantidad; i++)
+            {
+                Console.WriteLine($"Ingresa la calificacion número: {i}");
+                sumaCalificaciones += Convert.ToInt32(Console.ReadLine());
+            }
 
-            //Console.WriteLine("Ingresa un número:");
-            //int numero = Convert.ToInt32(Console.ReadLine());
-
-            //                 // condicion ? 'si cumple' : 'si no cumple'
-            //string mensaje = numero % 2 == 0 ? "Es par" : "Es inpar";
-            //Console.WriteLine(mensaje);
+            decimal promedio = sumaCalificaciones / cantidad;
+            Console.WriteLine($"El promedio es: {promedio}");
 
             //EJERCICIO 1
-            //Pedir un numero entre 0 y 99 999 y decir cuantas cifras tiene
-            //1 = 1 cifra
-            //100 = 3 crifras 
-            //9000 = 4 crifras
+            //Leer un número y mostrar su cuadrado, repetir el proceso hasta que se introduzca un numero negativo
 
-            //Ejercicio 2:
-            /*Pedir que digite un dos números y despues de pedirlos que nos indique que operacion desea hacer
-             1.- Suma ingresa (s)  etc... (+,-,/,*)
-             2.- res (r)
-             ..... 
-             */
-            Console.WriteLine("Opciones: \n" +
-                "1.- Suma (s)\n" +
-                "2.- Resta (r)" +
-                "3.- Multi (m)");
-
+            //Ejercicio 2
+            //Leer numeros hasta  que se introduzca 0, para cada uno indicar si es par o inpar
 
             //Ejercicio 3
-            /*
-             CAJERO AUTOMATICO
-            Hacer un programa quen simule un cajero automático con un saldo inicial de $1000 pesos
-            con el siguiente menu de opciones:
-            1.- Ingresar dinero a la cuenta   => Solicitar la cantidad a ingresar y después imprimir la cantidad total de la cuenta
-            2.- Retirar dinero de la cuenta   => Solicitar la cantidad a retirar (Si tiene el dinero que impra lo que resta y si no imprimir que su saldo es insuficiente)
-            3.- Salir => imprimir que ha salido del sistema
+            // Pedir un  número N de sueldos, introducir los N sueldos y mostrar el sueldo máximo
 
-             * => opcion no valida
-             */
+            //ejecicio 4
+            //Pedir 5 notas y decir si hay algun reprobado
+        
+            //ejercicio 5
+            //Mostrar los numeros del 100 al cero de 7 en 7 
+
+            //ejercicio 6
+            //Pedir un número N y mostrar todos los numeros del 1 al N
         }
 
 
